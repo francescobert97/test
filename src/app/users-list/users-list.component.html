@@ -1,0 +1,14 @@
+<div class="container-fluid d-flex flex-column">
+    <div *ngFor="let user of users" class="d-flex user-view">
+        <img src="{{user.imageUrl}}" alt="">
+        <p>{{user.name}} {{user.surname}}</p>
+        <p>{{user.mail}}</p>
+        <p>{{user.location.address}}</p>
+        <p>{{user.orders.length}}</p>
+        <a href=""></a>
+        <div class="d-flex justify-content-between">
+            <button class="btn btn-primary">Edit</button>
+            <button class="btn btn-danger">Delete</button>
+        </div>
+    </div>
+
